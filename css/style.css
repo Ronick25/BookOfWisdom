@@ -1,0 +1,74 @@
+.box {
+    position: fixed;
+    top: 58%;
+    left: 68%;
+   	transform: translate(-66%, -66%);
+}
+
+.starter-template {
+    text-align: center;
+}
+
+
+a, a:hover { 
+
+    text-decoration: none;
+}
+
+.textArea {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding-bottom: 15px;
+	padding-right: 15px;
+}
+
+.notif {
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+.reloadBut:hover {
+	border-radius: 10px;
+    background: rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.content {
+	background-color: #F8F8F8;
+    height: 450px;
+    font-family: 'Droid Serif', serif;
+    font-size: 20px;
+    padding: 25px 25px;	
+}
+
+.wrapper {
+	margin-right: auto;
+    margin-left: auto;
+    padding-left: 85px;
+    padding-right: 100px;
+}
+
+.head {
+	font-family: cursive; 
+	text-align: center;
+	font-size: 32px;
+	padding: 15px 0;
+}
+
+ .table>tbody>tr>td {
+	   vertical-align: middle;
+}
+
+.logout {
+	text-align: right;
+	padding-top: 7px;
+	padding-left: 10px;
+
+}
+
+img.reloadBut {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
