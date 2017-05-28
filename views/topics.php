@@ -22,7 +22,6 @@
 		array_push($arrayImg, $events[img]);
 	}
 	?>
-	<form action="../controller/deleteTopic.php" method="post">
 	<div class="container">
 		<table class="table">
 			<thead>
@@ -39,13 +38,14 @@
 					<td><?php echo ($arrayId[$i])." "; ?></td>
 					<td><?php echo ($arrayName[$i])." "; ?></td>
 					<td><img src="<?php echo ($arrayImg[$i])." ";?>" alt="" width="75", heigth="75"></td>
-					<td><button class="btn btn-danger" type="submit" name="deleteById" value=<?= ($arrayId[$i]); ?>>DELETE</button></form></td>
-				</tr><?php } ?>	
-			</tbody>
-		</table>
-	</div>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="../js/bootstrap.min.js"></script>
-</body>
-</html>
+					<td> <button class="btn btn-danger" onclick="deleteTopic(<?= ($arrayId[$i]); ?>)">DELETE</button>
+					<?php include("notificationButton.php");?></td>
+					</tr><?php } ?>	
+				</tbody>
+			</table>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<script src="../js/script.js"></script>
+	</body>
+	</html>

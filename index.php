@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -8,18 +12,19 @@
     <title>Book of Wisdom</title>
 </head>
 <body>
-    <form action="models/testreg.php" method="post">
-        <div class="col-xs-6 col-sm-6 col-md-6 box">
+    <div class= "col-md-4 col-lg-4"></div>
+    <div class="col-md-4" style="padding-top: 15%">
+        <form action="../models/testreg.php" method="post">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-lg-4">
                         <div class="panel panel-primary">
                             <div class="panel-heading">
-                                <h3 class="panel-title">Авторизация на сайте</h3>
+                                <h3 class="panel-title">Регистрация на сайте</h3>
                             </div>
                             <div class="panel-body">
                                 <div class="row">
-                                    <div class="col-xs-12 col-sm-12 col-md-12 login-box">
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
                                         <form role="form">
                                             <div class="input-group">
                                                 <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
@@ -36,9 +41,10 @@
                             </div>
                             <div class="panel-footer">
                                 <div class="row">
-                                    <div class="col-xs-12 col-sm-12 col-md-12" style="text-align: center;">
-                                        <button name = "submit" type="submit" class="btn btn-labeled btn-success" style="width: 50%;">
-                                        <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Войти</button>
+                                    <div class="col-xs-12 col-sm-12 col-md-12" style="text-align: center">
+                                        <button name = "submit" type="submit" class="btn btn-labeled btn-success" style="width: 49%;">
+                                            <span class="btn-label"></span>Войти
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -46,8 +52,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </form>
+        </form>
+    </div>
     <div class="textArea">
         <?php
         if (empty($_SESSION['login']) or empty($_SESSION['id'])) {

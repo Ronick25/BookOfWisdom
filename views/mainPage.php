@@ -27,7 +27,7 @@
 	<div class='wrapper'>
 		<p class="head">The Book of Wisdom</p>
 		<div class="content">
-			Этот сайт сделан для управления базой данных мобильного приложения  <a href="https://play.google.com/store/apps/details?id=com.palantir.zver.bookofwisdom">Book of Wisdom</a>. Он предоставляет удобный интерфейс для удаления, добавления и изменения новых цитат, тем и авторов. А так же предоставляет RESTful api для удобной работы мобильного приложения с базой данных.
+			Этот сайт сделан для управления базой данных мобильного приложения  <a href="https://play.google.com/store/apps/details?id=com.palantir.zver.bookofwisdom">Book of Wisdom</a>. Он предоставляет удобный интерфейс для удаления, добавления и изменения новых цитат, тем и авторов. А так же предоставляет RESTful api для удобной работы мобильного приложения с базой данных. Сайт защищен от XSS-атак и SQL-инъекций.
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

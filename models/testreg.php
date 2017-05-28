@@ -1,6 +1,6 @@
 <?php
     include ("bd.php");
-
+    
     session_start();
     if (isset($_POST['login'])) { $login = $_POST['login']; if ($login == '') { unset($login);} } 
     if (isset($_POST['password'])) { $password=$_POST['password']; if ($password =='') { unset($password);} }
@@ -10,13 +10,6 @@
         unset($_SESSION['login']);
         unset($_SESSION['id']);
         header('Location: http://phil0s0pher.tk/index.php');
-    } else if (empty($login) or empty($password)) { 
-        ?>
-        <form action="../views/notification.php" method="post">
-        <?php 
-        $temp = 0;
-        include ("../views/notification.php");
-        exit();
     }
 
     $login = stripslashes($login);
@@ -32,7 +25,7 @@
         ?>
         <form action="../views/notification.php" method="post">
         <?php 
-        $temp = 4;
+        $temp = 0;
         include ("../views/notification.php");
         exit();
     } else {
@@ -44,7 +37,7 @@
             ?>
             <form action="../views/notification.php" method="post">
             <?php 
-            $temp = 4;
+            $temp = 0;
             include ("../views/notification.php");
             exit();
         }

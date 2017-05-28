@@ -24,7 +24,6 @@
 		array_push($arrayQuote, $events[quote]);
 	}
 	?>
-	<form action="../controller/deleteQuote.php" method="post">
 	<div class="container">
 		<table class="table">
 			<thead>
@@ -44,7 +43,8 @@
 					<td><?php echo ($arrayAuthor[$i])." "; ?></td>
 					<td><?php echo ($arrayTopic[$i])." "; ?></td>
 					<td><?php echo ($arrayQuote[$i])." "; ?></td>
-					<td><button class="btn btn-danger" type="submit" name="deleteById" value=<?= ($arrayId[$i]); ?>>DELETE</button></form></td>
+					<td> <button class="btn btn-danger" onclick="deleteQuote(<?= ($arrayId[$i]); ?>)">DELETE</button>
+					<?php include("notificationButton.php");?></td>
 					<td><form action="updateQuote.php" method="post">
 						<button class="btn btn-primary" type="submit" name="updateQuote" value=<?= ($arrayId[$i]); ?>>UPDATE</button></form></td>
 				</tr><?php } ?>	
@@ -53,5 +53,6 @@
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/script.js"></script>
 </body>
 </html>
